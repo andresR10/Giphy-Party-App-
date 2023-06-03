@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="p-3 mb-2 bg-info">
+  <h1 class="text-center">GIPHY Factory<i class="fa-solid fa-screwdriver-wrench"></i></h1>
+  <hr>
+  <div class="container">
+    <form  id="searchForm">
+      <div class="form-group form-inline justify-content-center row shadow p-3">
+      <input type="text" class="form-control col-lg-6 border border-success" id="search" placeholder="Search term goes here"> 
+      </div>
+
+      <div class="form-group bg-info-clearfix pb-5">
+        <button type="submit" class="btn btn-primary float-left" id="searchBtn">Giphy Lookup!</button>
+        <button type="submit" class="btn btn-danger float-right" id="removeBtn">Image Neuralyzer</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="px-5" id="gif-section"></div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
